@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei'
+import { Environment, OrbitControls, PerspectiveCamera, Text3D } from '@react-three/drei'
 import { DotScreen, EffectComposer } from '@react-three/postprocessing'
 import { OutlineDepthBased } from './PostEffectOutline'
 import * as THREE from 'three'
@@ -33,7 +33,7 @@ function App() {
     <EffectComposer>
       <DotScreen
         angle={Math.PI * 0.5} // angle of the dot pattern
-        scale={1.0} // scale of the dot pattern
+        scale={0.5} // scale of the dot pattern
       />
     </EffectComposer>
     <directionalLight position={[10, 10, 50]} intensity={4} />
@@ -43,9 +43,13 @@ function App() {
     {/* <PerspectiveCamera ref={refCam} makeDefault position={[0, 0, 500]} far={100000} />
     <OrbitControls /> */}
     <PerspectiveCamera ref={refCam} makeDefault position={[-1614.62,116.05,195.44 ]} rotation={[-0.63,-1.22,-0.6]} far={100000} />
-    <mesh rotation={[0, Math.PI * .5, 0]} position={[10000, 1500, 0]}>
+    <Text3D font={"Bangers_Regular.json"} position={[-450,150,-520]} scale={150} rotation={[0,-Math.PI*.5, 0]}>
+      PARTY!
+      <meshNormalMaterial />
+    </Text3D>
+    <mesh rotation={[0, Math.PI * .5, 0]} position={[10000, 1650, 0]}>
       <meshStandardMaterial map={landTex} />
-      <boxGeometry args={[20000, 3000]} />
+      <boxGeometry args={[20000, 3300]} />
     </mesh>
     <mesh rotation={[Math.PI * .5, 0, 0]}>
       <meshStandardMaterial map={waterTex} />
