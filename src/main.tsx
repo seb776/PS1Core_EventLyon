@@ -17,6 +17,15 @@ function MainCover() {
 
         </div>
       </div>
+      <div className='flex justify-center items-center absolute' style={{width: '30vh', backgroundImage: 'url(./Stamp.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', aspectRatio: '1.77'}}>
+        <div className='text-white text-center' style={{fontSize: '2vh', fontWeight: 'bold'}}>
+        vernissage 
+        <br/>
+        expo
+        <br/>
+        Jules KB
+        </div>
+      </div>
   </div>
 }
 // 282/1031

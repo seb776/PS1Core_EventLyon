@@ -18,6 +18,8 @@ function DebugCam() {
 
 function App() {
   const gltf = useLoader(GLTFLoader, '/3D/WeirdMesh/24_09_30_11_11_50_296.gltf')
+  const gltfFish = useLoader(GLTFLoader, '/3D/japanese_koi_fish_in_psxps1_style/scene.gltf')
+  const gltfCat = useLoader(GLTFLoader, '/3D/cat_ps1_low_poly_rigged/scene.gltf')
   const waterTex = useLoader(TextureLoader, 'Water.jpg')
   const landTex = useLoader(TextureLoader, 'Landscape.jpg')
   const rep = 15;
@@ -55,8 +57,12 @@ function App() {
       <meshStandardMaterial map={waterTex} />
       <boxGeometry args={[20000, 20000]} />
     </mesh>
-    <group position={[0, -150, 150]}>
-      <primitive object={gltf.scene} />
+    <group position={[0, -150, 100]}>
+      <primitive object={gltf.scene} position={[-250,0,150]} scale={1.2}/>
+      <group scale={50} position={[-1000,250,-200]} rotation={[0,0,0.2]}>
+      <primitive object={gltfFish.scene}/>
+      <primitive object={gltfCat.scene} scale={0.5} position={[-9.2,-0.8,5]} rotation={[-0.6,-0.7,0]}/>
+      </group>
     </group>
   </>
   )
