@@ -18,6 +18,7 @@ function DebugCam() {
 
 function App() {
   const gltf = useLoader(GLTFLoader, '/3D/WeirdMesh/24_09_30_11_11_50_296.gltf')
+  const gltfWeirdo2 = useLoader(GLTFLoader, '/3D/Weirdo2/24_10_09_13_32_19_280.gltf')
   const gltfFish = useLoader(GLTFLoader, '/3D/japanese_koi_fish_in_psxps1_style/scene.gltf')
   const gltfCat = useLoader(GLTFLoader, '/3D/cat_ps1_low_poly_rigged/scene.gltf')
   const waterTex = useLoader(TextureLoader, 'Water.jpg')
@@ -45,9 +46,10 @@ function App() {
     {/* <PerspectiveCamera ref={refCam} makeDefault position={[0, 0, 500]} far={100000} />
     <OrbitControls /> */}
     <PerspectiveCamera ref={refCam} makeDefault position={[-1614.62,116.05,195.44 ]} rotation={[-0.63,-1.22,-0.6]} far={100000} />
-    <Text3D font={"Bangers_Regular.json"} position={[-450,150,-520]} scale={150} rotation={[0,-Math.PI*.5, 0]}>
+    <Text3D font={"Bangers_Regular.json"} position={[-1050,10,-80]} scale={70} rotation={[0,-Math.PI*.5, 1.5]}>
       PARTY!
-      <meshNormalMaterial />
+      <meshStandardMaterial color={"#AAAAAA"}/>
+      {/* <meshNormalMaterial /> */}
     </Text3D>
     <mesh rotation={[0, Math.PI * .5, 0]} position={[10000, 1650, 0]}>
       <meshStandardMaterial map={landTex} />
@@ -58,11 +60,8 @@ function App() {
       <boxGeometry args={[20000, 20000]} />
     </mesh>
     <group position={[0, -150, 100]}>
-      <primitive object={gltf.scene} position={[-250,0,150]} scale={1.2}/>
-      <group scale={50} position={[-1000,250,-200]} rotation={[0,0,0.2]}>
-      <primitive object={gltfFish.scene}/>
-      <primitive object={gltfCat.scene} scale={0.5} position={[-9.2,-0.8,5]} rotation={[-0.6,-0.7,0]}/>
-      </group>
+      <primitive object={gltf.scene} position={[-1450,40,130]} rotation={[0.1,-0.1,0]} scale={0.6}/>
+      <primitive object={gltfWeirdo2.scene}  position={[-1100,148,0]} rotation={[0,Math.PI-0.4,0]} scale={0.5}/>
     </group>
   </>
   )

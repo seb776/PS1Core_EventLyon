@@ -13,17 +13,35 @@ function MainCover() {
           <p className='text-white rotate-90 mt-[2.5vh] text-nowrap' style={{fontFamily: 'Playstation', fontSize: '2.7vh', letterSpacing: '0.2vh'}}>Grrrnd Zero</p>
         </div>
         <div className='h-full w-full'>
-        <p className='text-black rotate-90 mt-[5vh] text-nowrap' style={{fontFamily: 'Playstation', fontSize: '2.7vh', letterSpacing: '0.2vh'}}>60 av de bohlen 69120 Vaulx en Velin @20h</p>
+        <p className='text-black rotate-90 mt-[5vh] text-nowrap' style={{fontFamily: 'Playstation', fontSize: '2.7vh', letterSpacing: '0.2vh'}}>20 ans du Grrrnd Zero</p>
 
         </div>
       </div>
-      <div className='top-[70vh] right-[5vh] flex justify-center items-center absolute' style={{transform: 'rotate(10deg)', width: '30vh', backgroundImage: 'url(./Stamp.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', aspectRatio: '1.77'}}>
+      <div className='absolute top-[70vh] right-[5vh] flex justify-center items-center ' style={{transform: 'rotate(-10deg)', width: '30vh', backgroundImage: 'url(./Stamp.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', aspectRatio: '1.77'}}>
         <div className='text-white text-center' style={{fontSize: '2vh', fontWeight: 'bold'}}>
         vernissage 
         <br/>
         expo
         <br/>
         Jules KB
+        </div>
+      </div>
+
+      <div className='absolute bottom-[5vh] right-[5vh] flex justify-center items-center ' style={{transform: 'rotate(-10deg)', width: '17vh', aspectRatio: '2.33' }}>
+        <div className='absolute w-full h-full' style={{backgroundImage: 'url(./PriceTag.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', filter: 'brightness(30%) saturate(100%) invert(85%) sepia(97%) saturate(485%) hue-rotate(323deg) brightness(106%) contrast(109%)'}}></div>
+        <div className='absolute  text-center opacity-70 text-gray-900' style={{transform:'rotate(4deg)', filter: 'blur(0.05vh)', fontSize: '2.5vh', fontWeight: 'bold'}}>
+        +- €8.00
+        </div>
+      </div>
+      <div className='absolute bottom-[2vh] left-[2vh] flex flex-col bg-white w-[25vh]'>
+        <div className='uppercase font-bold  border-solid bg-black px-[0.5vh] text-white border-[0.2vh] border-black' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
+          Informations
+        </div>
+        <div className='border-solid leading-none border-[0.2vh] border-black px-[0.5vh] py-[0.2vh]' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
+          Ouverture des portes a 20h
+        </div>
+        <div className='border-solid leading-none border-[0.2vh] border-black px-[0.5vh] py-[0.2vh]' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
+          60 av de bohlen 69120 Vaulx en Velin
         </div>
       </div>
   </div>
