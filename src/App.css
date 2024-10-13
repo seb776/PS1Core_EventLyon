@@ -10,8 +10,23 @@ body, html {
 }
 
 @font-face {
+  font-family: TypefessesClairObscure;
+  src: url(Typefesses/Typefesse_Claire-Obscure.woff);
+}
+
+@font-face {
+  font-family: Typefesses;
+  src: url(Typefesses/Typefesse_Pleine.woff);
+}
+
+@font-face {
   font-family: Playstation;
   src: url(EmotionEngineBold-YGnL.ttf);
+}
+
+@font-face {
+  font-family: Bangers;
+  src: url(Bangers-Regular.ttf);
 }
 
 @font-face {

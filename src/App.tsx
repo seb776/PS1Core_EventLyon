@@ -46,11 +46,10 @@ function App() {
     {/* <PerspectiveCamera ref={refCam} makeDefault position={[0, 0, 500]} far={100000} />
     <OrbitControls /> */}
     <PerspectiveCamera ref={refCam} makeDefault position={[-1614.62,116.05,195.44 ]} rotation={[-0.63,-1.22,-0.6]} far={100000} />
-    <Text3D font={"Bangers_Regular.json"} position={[-1050,10,-80]} scale={70} rotation={[0,-Math.PI*.5, 1.5]}>
+    {/* <Text3D font={"Bangers_Regular.json"} position={[-1050,10,-80]} scale={70} rotation={[0,-Math.PI*.5, 1.5]}>
       PARTY!
       <meshStandardMaterial color={"#AAAAAA"}/>
-      {/* <meshNormalMaterial /> */}
-    </Text3D>
+    </Text3D> */}
     <mesh rotation={[0, Math.PI * .5, 0]} position={[10000, 1650, 0]}>
       <meshStandardMaterial map={landTex} />
       <boxGeometry args={[20000, 3300]} />
