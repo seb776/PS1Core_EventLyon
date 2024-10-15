@@ -18,7 +18,7 @@ function MainCover() {
         </div>
       </div>
       <div className='absolute z-50 top-[2vh] left-[40vh] flex justify-center items-center ' style={{transform: 'rotate(5deg)', width: '30vh', backgroundImage: 'url(./Stamp.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', aspectRatio: '1.77', filter: "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"}}>
-        <div className='text-white text-center' style={{fontSize: '2vh', fontWeight: 'bold'}}>
+        <div className='text-white text-center' style={{fontSize: '2vh',fontFamily: 'Bangers',letterSpacing: '0.3vw', fontWeight: 'bold'}}>
         vernissage 
         <br/>
         expo
@@ -34,7 +34,7 @@ function MainCover() {
         </div>
       </div>
       <div className='absolute bottom-[2vh] left-[2vh] flex flex-col bg-white w-[25vh]'>
-        <div className='uppercase font-bold  border-solid bg-black px-[0.5vh] text-white border-[0.2vh] border-black' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
+        <div className='uppercase font-normal  border-solid bg-black px-[0.5vh] text-white border-[0.2vh] border-black' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
           Informations
         </div>
         <div className='border-solid leading-none border-[0.2vh] border-black px-[0.5vh] py-[0.2vh]' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
@@ -46,7 +46,7 @@ function MainCover() {
       </div>
 
       <div className='absolute bottom-[2vh] left-[29vh] flex flex-col bg-white w-[15vh]'>
-        <div className='uppercase font-bold  border-solid bg-black px-[0.5vh] text-white border-[0.2vh] border-black' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
+        <div className='uppercase font-normal  border-solid bg-black px-[0.5vh] text-white border-[0.2vh] border-black' style={{fontSize: "2vh", fontFamily: 'Roboto'}}>
           Visuels
         </div>
         <div className='border-solid leading-none border-[0.2vh] border-black px-[1vh] py-[0.5vh]' style={{fontSize: "2.5vh", fontFamily: 'Roboto'}}>
@@ -59,63 +59,63 @@ function MainCover() {
       </div>
 
 {/* Kate NV */}
-      <div className='absolute flex flex-col left-[2vw] top-[16vh] stroke-black stroke-2' style={{ transform: 'rotate(-5deg)'}}>
-        <div className='' style={{fontSize: '14vh', fontWeight: 'bold', color: '#FF007F',
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash', filter: 'drop-shadow(0.5vh 0.5vh 0 #fff)'}}>
+      <div className='absolute flex flex-col left-[2vw] top-[14.8vh] stroke-black stroke-2' style={{ transform: 'rotate(-5deg)'}}>
+        <div className='' style={{fontSize: '18vh', fontWeight: 'bold', color: 'white',
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers', filter: 'drop-shadow(0.5vh 0.5vh 0 black)'}}>
         Kate NV 
         </div>
-        <div className='text-white absolute left-[5vw] top-[15vh]' style={{letterSpacing: '0.2vw',fontSize: '3vh', fontWeight: 'bold', width: '45vw',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='text-black absolute left-[10vw] top-[21vh]' style={{letterSpacing: '0.1vw',fontSize: '3vh', fontWeight: 'bold', width: '45vw',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", lineHeight: '4vh', filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         pop étoile filante, electronica glitchée 
         </div>
-        <div className='absolute top-[15vh] right-[5vw] ' style={{ letterSpacing: '0.1vw', color: 'white', fontSize: '3vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>     
+        <div className='absolute top-[15vh] right-[-14vw] ' style={{letterSpacing: '0.3vw',fontSize: '3vh', fontWeight: 'normal',  
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         RU/DE
         </div>
       </div>
 {/* Lametia */}
-      <div className='absolute flex flex-col left-[22vw] top-[42vh] stroke-black stroke-2'>
-        <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '7vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash'}}>
+      <div className='absolute flex flex-col left-[23vw] top-[43.5vh] stroke-black stroke-2'>
+        <div className='' style={{color: 'white',fontSize: '6vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 black)',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers'}}>
         Lametia 
         </div>
-        <div className='text-white ' style={{letterSpacing: '0.2vw',fontSize: '2vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='absolute text-black top-[7vh] left-[-2vw]' style={{letterSpacing: '0.1vw',fontSize: '3vh', fontWeight: 'bold', width: '85vw',
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         jazz cosmique et psychédélique
         </div>
-        <div className='absolute top-[3vh] right-[-5vw]' style={{letterSpacing: '0.1vw',color: 'white', fontSize: '3vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='absolute top-[2.5vh] right-[-5vw]' style={{letterSpacing: '0.3vw',color: 'black', fontSize: '3vh', fontWeight: 'normal',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         IT
         </div>
       </div>
       {/* Benjamin Moutte */}
-      <div className='absolute flex flex-col left-[20vw] top-[53vh] stroke-black stroke-2'>
-      <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '7vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash'}}>
+      <div className='absolute flex flex-col left-[20vw] top-[55vh] stroke-black stroke-2'>
+      <div className='' style={{color: 'white',fontSize: '6vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 black)',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers'}}>
         Benjamin Moutte  
         </div>
-        <div className='text-white ' style={{letterSpacing: '0.2vw',fontSize: '2vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='absolute text-black top-[7vh] left-[-5vw]' style={{letterSpacing: '0.1vw',fontSize: '3vh', fontWeight: 'bold',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         synth pop cheloue
         </div>
-        <div className='absolute top-[5vh] right-[2vw] text-white '  style={{letterSpacing: '0.1vw',color: 'white', fontSize: '3vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='absolute top-[2.5vh] right-[-11.5vw] text-black '  style={{letterSpacing: '0.3vw',color: 'black', fontSize: '3vh', fontWeight: 'normal',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         Dijon
         </div>
       </div>
 
 {/* Azurite Sun & The Sulfur Band  */}
-      <div className='absolute flex flex-col left-[17vw] top-[65vh] stroke-black stroke-2'>
-      <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '7vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash'}}>
+      <div className='absolute flex flex-col left-[17vw] top-[68vh] stroke-black stroke-2'>
+      <div className='' style={{color: 'white',fontSize: '6vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 black)',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers', lineHeight: '5.5vh'}}>
         Azurite Sun &<br/> The Sulfur Band  
         </div>
-        <div className='text-white ' style={{letterSpacing: '0.2vw',fontSize: '2vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "black", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='absolute top-[11.5vh] left-[-7vw] text-black ' style={{letterSpacing: '0.1vw',fontSize: '3vh', fontWeight: 'bold',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", lineHeight: '3vh', width: '80vw', filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         art déco pop, doom fantasmagorique
         </div>
-        <div className='absolute top-[12vh] right-[2vw] text-white '  style={{letterSpacing: '0.1vw',color: 'white', fontSize: '3vh', fontWeight: 'bold',   
-        WebkitTextStrokeWidth: "0.0vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 #FF007F)'}}>    
+        <div className='absolute top-[6vh] right-[-10vw] text-black '  style={{letterSpacing: '0.3vw',color: 'black', fontSize: '3vh', fontWeight: 'normal',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Bangers', filter: 'drop-shadow(0.25vh 0.25vh 0 white)'}}>    
         Lyon
         </div>
       </div>

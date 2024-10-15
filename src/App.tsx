@@ -33,10 +33,12 @@ function App() {
 // x-1614.62 y116.05 z195.44 
 // rot x-0.63 y-1.22 z -0.6
   return (<>
+  {/* <fog attach="fog" args={['cyan', 1050, 20000]} /> */}
     <EffectComposer>
       <DotScreen
+      blendFunction={THREE.CustomBlending}
         angle={Math.PI * 0.5} // angle of the dot pattern
-        scale={0.5} // scale of the dot pattern
+        scale={0.25} // scale of the dot pattern
       />
     </EffectComposer>
     <directionalLight position={[10, 10, 50]} intensity={4} />
