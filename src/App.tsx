@@ -19,17 +19,17 @@ function DebugCam() {
 function App() {
   const gltf = useLoader(GLTFLoader, '/3D/WeirdMesh/24_09_30_11_11_50_296.gltf')
   const gltfWeirdo2 = useLoader(GLTFLoader, '/3D/Weirdo2/24_10_09_13_32_19_280.gltf')
-  const gltfFish = useLoader(GLTFLoader, '/3D/japanese_koi_fish_in_psxps1_style/scene.gltf')
-  const gltfCat = useLoader(GLTFLoader, '/3D/cat_ps1_low_poly_rigged/scene.gltf')
+  // const gltfFish = useLoader(GLTFLoader, '/3D/japanese_koi_fish_in_psxps1_style/scene.gltf')
+  // const gltfCat = useLoader(GLTFLoader, '/3D/cat_ps1_low_poly_rigged/scene.gltf')
   const waterTex = useLoader(TextureLoader, 'Water.jpg')
   const landTex = useLoader(TextureLoader, 'Landscape.jpg')
   const rep = 15;
   waterTex.repeat = new THREE.Vector2(rep, rep)
   waterTex.wrapS = waterTex.wrapT = THREE.RepeatWrapping;
   const refCam = useRef<THREE.PerspectiveCamera>(null);
-  useFrame(() => {
-    console.log(refCam.current?.position, refCam.current?.rotation);
-  });
+  // useFrame(() => {
+  //   console.log(refCam.current?.position, refCam.current?.rotation);
+  // });
 // x-1614.62 y116.05 z195.44 
 // rot x-0.63 y-1.22 z -0.6
   return (<>
