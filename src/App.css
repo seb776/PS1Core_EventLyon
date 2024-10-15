@@ -10,6 +10,11 @@ body, html {
 }
 
 @font-face {
+  font-family: Crash;
+  src: url(crash-a-like.ttf);
+}
+
+@font-face {
   font-family: TypefessesClairObscure;
   src: url(Typefesses/Typefesse_Claire-Obscure.woff);
 }

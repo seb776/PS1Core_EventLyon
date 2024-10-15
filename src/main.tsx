@@ -60,8 +60,8 @@ function MainCover() {
 
 {/* Kate NV */}
       <div className='absolute flex flex-col left-[2vw] top-[16vh] stroke-black stroke-2' style={{ transform: 'rotate(-5deg)'}}>
-        <div className='' style={{fontSize: '12vh', fontWeight: 'bold', color: '#FF007F',
-        WebkitTextStrokeWidth: "0vh", WebkitTextStrokeColor: "black", fontFamily: 'TypefessesClairObscure', filter: 'drop-shadow(0.5vh 0.5vh 0 #fff)'}}>
+        <div className='' style={{fontSize: '14vh', fontWeight: 'bold', color: '#FF007F',
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash', filter: 'drop-shadow(0.5vh 0.5vh 0 #fff)'}}>
         Kate NV 
         </div>
         <div className='text-white absolute left-[5vw] top-[15vh]' style={{letterSpacing: '0.2vw',fontSize: '3vh', fontWeight: 'bold', width: '45vw',   
@@ -75,8 +75,8 @@ function MainCover() {
       </div>
 {/* Lametia */}
       <div className='absolute flex flex-col left-[22vw] top-[42vh] stroke-black stroke-2'>
-        <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '4.5vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Typefesses'}}>
+        <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '7vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash'}}>
         Lametia 
         </div>
         <div className='text-white ' style={{letterSpacing: '0.2vw',fontSize: '2vh', fontWeight: 'bold',   
@@ -90,8 +90,8 @@ function MainCover() {
       </div>
       {/* Benjamin Moutte */}
       <div className='absolute flex flex-col left-[20vw] top-[53vh] stroke-black stroke-2'>
-      <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '4.5vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Typefesses'}}>
+      <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '7vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash'}}>
         Benjamin Moutte  
         </div>
         <div className='text-white ' style={{letterSpacing: '0.2vw',fontSize: '2vh', fontWeight: 'bold',   
@@ -106,8 +106,8 @@ function MainCover() {
 
 {/* Azurite Sun & The Sulfur Band  */}
       <div className='absolute flex flex-col left-[17vw] top-[65vh] stroke-black stroke-2'>
-      <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '4.5vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
-        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "white", fontFamily: 'Typefesses'}}>
+      <div className='' style={{color: 'rgb(255, 0, 127)',fontSize: '7vh', fontWeight: 'bold', filter: 'drop-shadow(0.25vh 0.25vh 0 #fff)',   
+        WebkitTextStrokeWidth: "0.1vh", WebkitTextStrokeColor: "black", fontFamily: 'Crash'}}>
         Azurite Sun &<br/> The Sulfur Band  
         </div>
         <div className='text-white ' style={{letterSpacing: '0.2vw',fontSize: '2vh', fontWeight: 'bold',   
