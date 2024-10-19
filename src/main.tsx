@@ -17,6 +17,13 @@ function MainCover() {
 
         </div>
       </div>
+      <div className='absolute top-[2vh] left-[5vh]' style={{fontSize: '12vh', lineHeight: '9vh',fontFamily: 'Bangers'}}>
+        2 
+        <br/>
+        NOV
+      </div>
+
+
       <div className='absolute z-50 top-[2vh] left-[40vh] flex justify-center items-center ' style={{transform: 'rotate(5deg)', width: '30vh', backgroundImage: 'url(./Stamp.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', aspectRatio: '1.77', filter: "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"}}>
         <div className='text-white text-center' style={{fontSize: '2vh',fontFamily: 'Bangers',letterSpacing: '0.3vw', fontWeight: 'bold'}}>
         vernissage 
