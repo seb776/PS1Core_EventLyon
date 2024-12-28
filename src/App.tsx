@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -27,6 +27,98 @@ function App() {
   waterTex.repeat = new THREE.Vector2(rep, rep)
   waterTex.wrapS = waterTex.wrapT = THREE.RepeatWrapping;
   const refCam = useRef<THREE.PerspectiveCamera>(null);
+
+  const refMaterials = useRef<THREE.ShaderMaterial[]>([]);
+  const refMaterials2 = useRef<THREE.ShaderMaterial[]>([]);
+
+  function setupAnimation() {
+    console.log(gltfWeirdo2.scene);
+    // Background weirdo
+    gltfWeirdo2.scene.children.forEach(child=>{
+      (child as any).material.onBeforeCompile = (shader) => {
+        refMaterials2.current!.push(shader);
+        shader.uniforms.time = {value: 0}
+        shader.vertexShader = `uniform float time;
+        ` + shader.vertexShader;
+        
+        shader.vertexShader = `#define sat(a) clamp(a, 0., 1.)
+        #define rot(a) mat2(cos(a), -sin(a), sin(a), cos(a))
+        ` + shader.vertexShader;
+        
+        const token = "#include <begin_vertex>"
+        const customTransform = /*glsl*/`
+        vec3 transformed = vec3(position);
+        transformed.x = position.x + 0.*25.0*(
+          sin(2.*time+position.y*.05) +
+          sin(3.*time+position.y*.2)*.5 +
+          sin(8.*time+position.y*.8)*.25
+        )
+        *pow(sat((position.y+250.)*.5), 5.);
+        vec2 off = vec2(0.,100);
+        transformed.xy -= off;
+        transformed.xy *= rot(sin(transformed.z*.03+time)*.5);
+        transformed.xy += off;
+        transformed.zy *= rot(asin(sin(time*6.))*.1);
+        `
+        shader.vertexShader = shader.vertexShader.replace(token,customTransform)
+
+      }
+    });
+    
+    // foreground weirdo
+    // console.log(gltf.scene);
+    gltf.scene.children.forEach(child=>{
+      (child as any).material.onBeforeCompile = (shader) => {
+        refMaterials.current!.push(shader);
+        shader.uniforms.time = {value: 0}
+        shader.vertexShader = `uniform float time;
+        ` + shader.vertexShader;
+
+        shader.vertexShader = `#define sat(a) clamp(a, 0., 1.)
+        ` + shader.vertexShader;
+        
+        const token = "#include <begin_vertex>"
+        const customTransform = /*glsl*/`
+            vec3 transformed = vec3(position);
+            transformed.x = position.x + 25.0*(
+              sin(2.*time+position.y*.05) +
+              sin(3.*time+position.y*.2)*.5 +
+              sin(8.*time+position.y*.8)*.25
+            )
+
+            *pow(sat((position.y-250.)*.5), 5.);
+            `
+        shader.vertexShader = 
+              shader.vertexShader.replace(token,customTransform)
+      }
+    });
+  }
+  
+
+  useEffect(()=>{
+    setupAnimation();
+    const INTERVAL = 1000/30;
+    let time = 0;
+    setInterval(()=>{
+      if (refMaterials.current) {
+        refMaterials.current.forEach(mat=>{
+          if ((mat as any).uniforms) {
+            (mat as any).uniforms.time.value = time/1000.;
+          }
+        })
+      }
+      if (refMaterials2.current) {
+        refMaterials2.current.forEach(mat=>{
+          if ((mat as any).uniforms) {
+            (mat as any).uniforms.time.value = time/1000.;
+          }
+        })
+      }
+      
+      time += INTERVAL;
+    }, INTERVAL)
+  }, []);
+
   // useFrame(() => {
   //   console.log(refCam.current?.position, refCam.current?.rotation);
   // });
@@ -38,7 +130,7 @@ function App() {
       <DotScreen
       blendFunction={THREE.CustomBlending}
         angle={Math.PI * 0.5} // angle of the dot pattern
-        scale={0.25} // scale of the dot pattern
+        scale={(4960/document.documentElement.clientHeight)*0.25} // scale of the dot pattern
       />
     </EffectComposer>
     <directionalLight position={[10, 10, 50]} intensity={4} />

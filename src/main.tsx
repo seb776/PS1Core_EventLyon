@@ -164,15 +164,15 @@ function MainCover() {
 // 282/1031
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className='absolute w-full h-full'>
-      <div className='absolute w-full h-full'>
-        <Canvas>
-          <App />
-        </Canvas>
-      </div>
-      <div className='absolute h-full w-full'>
-        <MainCover />
-      </div>
-    </div>
+        <div className='absolute w-full h-full'>
+          <div className='absolute w-full h-full'>
+            <Canvas>
+              <App />
+            </Canvas>
+          </div>
+          <div className='absolute h-full w-full'>
+            <MainCover />
+          </div>
+        </div>
   </StrictMode>,
 )
